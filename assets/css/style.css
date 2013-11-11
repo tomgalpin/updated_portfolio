@@ -169,12 +169,30 @@ body {padding-top: 200px;}
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1010px) {
+ #bottom { width: 100%;}
+}
 @media only screen and (max-width: 995px) {
   #image_container {
     margin-left: -10px;
   }
+  .name {width: 100%;}
+  #description {
+    left: auto;
+    right: 5%;
+  }
 }
-
+@media only screen and (max-width: 940px) {
+  .explanation {
+    width: 40%;
+  }
+  .explanation h1 {
+    font-size: 30px;
+  }
+  .explanation p {
+    font-size: 13px;
+  }
+}
 @media only screen and (max-width: 925px) {
   body {
     padding-top: 120px;
@@ -186,7 +204,83 @@ body {padding-top: 200px;}
     display: none;
   }
   #nav_links {
+    position: relative;
+    display: block;
     top: 0;
-    left: 15%;
+    left: 0;
+    margin: 5px auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #bottom {
+    width: 100%;
+  }
+  #blurb {
+    height: 150px;
+    width: 60%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+  }
+  .name h1 {
+    font-size: 50px;
+
+  }
+  .name h1:first-child {
+    width: 155px;
+    padding: 15px;
+  }
+  .name h1:last-child {
+    left: 146px;
+  }
+  #description {
+    right: auto;
+    text-align: left;
+    top: 100px;
+  }
+  hr {
+    display: none;
+  }
+  .explanation {
+    width: 100%;
+    left: 0;
+  }
+  .explanation p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    margin-left: 20%;
+  }
+  #cowboy .image{
+    padding-top: 150px;
+  }
+  #thismoment .image {
+    padding-top: 190px;
+  }
+  #todo .image {
+    padding-top: 280px;
+  }
+  #noesis .image {
+    padding-top: 270px;
+  }
+}
+
+
+@media only screen and (max-width: 615px) {
+  .icon_containers {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .icon_text p {
+    font-size: 13px;
+  }
+  .image {
+    margin-left: 10%;
   }
 }
