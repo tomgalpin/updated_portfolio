@@ -277,6 +277,9 @@ body {padding-top: 200px;}
 }
 
 @media only screen and (max-width: 490px) {
+  #blurb {
+    width: 70%;
+  }
   .icon_text p {
     font-size: 13px;
   }
