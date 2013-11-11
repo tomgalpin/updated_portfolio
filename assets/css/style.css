@@ -27,6 +27,7 @@ body {padding-top: 200px;}
 
 #nav_links {
   position: absolute;
+  width: 100%;
   top: 50px;
   left: 38%;
 }
