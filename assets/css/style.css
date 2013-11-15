@@ -290,3 +290,38 @@ body {padding-top: 200px;}
     margin-left: 10%;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #blurb {
+    width: 100%;
+    margin: 10px 10px 20px 10px;
+  }
+  .name {width: 80%;}
+  .name h1 {
+    font-size: 35px;
+    padding: 10px;
+    line-height: 35px;
+  }
+  .name h1:first-child {
+    width: 105px;
+    padding: 10px;
+    left: 30px;
+  }
+  .name h1:last-child {
+    left: 130px;
+  }
+  #description {
+    top: 80px;
+    text-align: center;
+    font-size: 15px;
+    left: 55px;
+  }
+  .image {
+    margin: 10px auto;
+  }
+  #todo .image img,
+  #noesis .image img {
+    margin-top: 50px;
+  }
+
+}
