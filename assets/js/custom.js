@@ -16,10 +16,10 @@ $(document).ready(function() {
         //disable all scrolling on mobile devices while menu is shown
         $('#container').bind('touchmove', function(e){e.preventDefault()});
 
-        //set margin for the whole container with a jquery UI animation
-        //$("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
-          //  duration: 700
-        //});
+        // set margin for the whole container with a jquery UI animation
+        $("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
+           duration: 700
+        });
 
     });
 

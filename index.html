@@ -5,7 +5,7 @@
     <title>Tom Galpin's Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" /> -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <link rel="icon" type="image/png" href="assets/images/t-icon.png">
   </head>
 
@@ -13,7 +13,7 @@
 
     <div id="container">
 
-      <!--The Hamburger Button in the Header-->
+
       <div id="navbar">
         <header>
             <div id="hamburger">
@@ -21,55 +21,49 @@
                 <div></div>
                 <div></div>
             </div>
+
+            <div id="image_container">
+              <div id="profile_pic">
+                <img src="assets/images/profile_pic2.png">
+              </div>
+            </div> <!-- #image_container -->
         </header>
 
         <!--The mobile navigation Markup hidden via css-->
         <nav class="mobile_navigation">
             <ul>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Email</a></li>
+                <li><a href="assets/images/Tom_Galpin_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="http://github.com/tomgalpin" target="_blank">Github</a></li>
+                <li><a href="http://www.linkedin.com/pub/tom-galpin/7/66a/10b" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:tomgalpin@gmail.com" target="_blank">Email</a></li>
             </ul>
         </nav>
       </div>  <!-- navbar -->
-          <!--The Layer that will be layed over the content
-          so that the content is unclickable while menu is shown-->
-          <div id="contentLayer"></div>
 
+      <div id="contentLayer"></div>
 
-
-        <!--The content of the site-->
-        <div id="content">
-            <h1>The Hamburger</h1>
-            <h2>A Mobile Menu Template</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-            sit amet.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-            sit amet.
-            </p>
-
+      <div id="content">
+        <div id="blurb" class="projects"></div>
+        <div id="cowboy" class="projects">
+          <div class="image">
+            <img src="assets/images/cowboyvc.png">
+          </div>
         </div>
+        <div id="thismoment" class="projects">
+          <div class="image">
+            <img src="assets/images/katespade.png">
+          </div>
+        </div>
+        <div id="todo" class="projects"></div>
+        <div id="noesis" class="projects"></div>
+      </div> <!-- content -->
 
-    </div>
-    <script src="assets/js/custom.js"></script>
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
-    <script src="assets/js/jquery.min.js"></script>
+    </div> <!-- container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <!--<script src="assets/js/jquery.min.js"></script>-->
+    <script text="text/javascript" src="assets/js/custom.js"></script>
 
   </body>
 
