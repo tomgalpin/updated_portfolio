@@ -4,193 +4,72 @@
     <meta charset="utf-8">
     <title>Tom Galpin's Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="assets/css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" /> -->
     <link rel="icon" type="image/png" href="assets/images/t-icon.png">
   </head>
 
   <body>
 
-    <!-- navbar -->
-    <div class="navbar navbar-fixed-top" role="navigation">
-      <div class="navbar-inner">
-        <div class="container">
+    <div id="container">
 
-          <div id="image_container">
-            <div id="profile_pic">
-              <img src="assets/images/profile_pic2.png">
+      <!--The Hamburger Button in the Header-->
+      <div id="navbar">
+        <header>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-          </div> <!-- #image_container -->
+        </header>
 
-          <div id="nav_links">
+        <!--The mobile navigation Markup hidden via css-->
+        <nav class="mobile_navigation">
+            <ul>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </nav>
+      </div>  <!-- navbar -->
+          <!--The Layer that will be layed over the content
+          so that the content is unclickable while menu is shown-->
+          <div id="contentLayer"></div>
 
-            <a href="assets/images/Tom_Galpin_Resume.pdf" >
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/resume_icon.png">
-                </div>
-                <div class="icon_text">
-                  <p>Resume</p>
-                </div>
-              </div>
-            </a>
 
-            <a href="http://github.com/tomgalpin" target="_blank">
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/github-48.png">
-                </div>
-                <div class="icon_text">
-                  <p>Github</p>
-                </div>
-              </div>
-            </a>
 
-            <a href="http://www.linkedin.com/pub/tom-galpin/7/66a/10b" target="_blank">
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/linkedin-48.png">
-                </div>
-                <div class="icon_text">
-                  <p>LinkedIn</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="http://tomcodes.tumblr.com/" target="_blank">
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/tumblr-48.png">
-                </div>
-                <div class="icon_text">
-                  <p>Tumblr</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="mailto:tomgalpin@gmail.com" target="_blank">
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/email-48.png">
-                </div>
-                <div class="icon_text">
-                  <p>Email</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="http://twitter.com/galpinyall" target="_blank">
-              <div class="icon_containers">
-                <div class="icon">
-                  <img src="assets/images/twitter-48.png">
-                </div>
-                <div class="icon_text">
-                  <p>Twitter</p>
-                </div>
-              </div>
-            </a>
-
-          </div> <!-- #nav_links -->
-
-        </div>
-      </div>
-    </div>      <!-- navbar -->
-
-    <div id="bottom">
-      <div id="blurb">
-
-        <div class="name">
-          <h1>TOM</h1>
-          <h1>GALPIN</h1>
-        </div> <!--name-->
-
-        <div id="description">
-            <p class="i_am">
-              I am a capable full stack developer
-              <br>
-              with a passion for the front end.
-              <br>
-              I am looking for a junior web dev position.
-          </p>
-        </div> <!-- description -->
-
-      </div> <!-- blurb -->
-
-      <hr>
-
-      <div id="projects">
-
-        <div id="cowboy" class="project">
-          <div class="image">
-            <img src="assets/images/cowboyvc.png">
-          </div>
-          <div class="explanation">
-            <h1>Cowboy Ventures</h1>
+        <!--The content of the site-->
+        <div id="content">
+            <h1>The Hamburger</h1>
+            <h2>A Mobile Menu Template</h2>
             <p>
-              As a freelance front end web dev I worked with a designer to rebuild and restructure <a href="http://cowboy.vc" target="_blank">Cowboy Ventures' website.</a>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+            sit amet.
             </p>
-          </div>
-        </div>
-
-        <div id="thismoment" class="project">
-          <div class="image">
-            <img src="assets/images/katespade.png">
-          </div>
-          <div class="explanation">
-            <h1>Thismoment.com</h1>
             <p>
-              As a front end web developer at <a href="https://www.thismoment.com/" target="_blank">Thismoment.com</a> I have created custom social media experiences for such clients as <a href="https://katespadenewyork.thismoment.com/" target="_blank">Kate Spade New York</a>, <a href="https://umhealthsystem.thismoment.com/" target="_blank">University of Michigan Health Systems</a>, <a href="https://ubisoft.thismoment.com/gb-en/youtube/assassinscreed3" target="_blank">Ubisoft</a>, and <a href="https://chicos.thismoment.com/" target="_blank">Chicos</a>.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua.
             </p>
-          </div>
-        </div>
-
-        <div id="todo" class="project">
-          <div class="image">
-            <img src="assets/images/blue_cropped.png">
-          </div>
-          <div class="explanation">
-            <h1>Tom's Todo List</h1>
             <p>
-              I recently graudated from <a href="https://generalassemb.ly/education/web-development-immersive/san-francisco" target="blank">General Assembly's Web Development Immersive (WDI)</a> program.  During my time there I created many different applications of varying I created complexity.  Through it all I learned JavaScript, HTML, CSS, jQuery, Ruby, Ruby on Rails, SQL, Git, Github, JSON, AJAX, HAML, SASS, and the rudiments of Photoshop.
-              <br>
-              This small application is just one example of what I built.  It is a responsive todo list using only CSS, JavaScript and jQuery.  With this list, one can easily switch between days, change colors schemes, flip the card, and add and delete tasks.
-              <br>
-              <a href="http://toms-todo.herokuapp.com/" target="blank">Play around with it here on Heroku!</a>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+            sit amet.
             </p>
-          </div>
+
         </div>
 
-        <div id="noesis" class="project">
-          <div class="image">
-            <img src="assets/images/noesis_cropped.png">
-          </div>
-          <div class="explanation">
-            <h1>Here I realized...</h1>
-            <p>
-              For my last project at WDI, my group and I created a socially-networked discovery tool that encourages the user to upload photos (from either their phone or their computer), attach a caption to it and plot it on a map.  Users can have friends and followers, or view all uploaded photos.  Additionally, we created an augmented reality hack for the browser on an iPhone that allows the user to see plotted photos around them along the bearing of the phone, within a certain radius.
-              <br>
-              <a href="http://hereirealized.herokuapp.com/" target="blank">Play around with it here on Heroku!</a>
-            </p>
-          </div>
-        </div>
-      </div> <!-- #projects -->
-
-    </div> <!-- bottom -->
-
-
+    </div>
+    <script src="assets/js/custom.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40101532-2', 'tomgalpin.com');
-      ga('send', 'pageview');
-
-    </script>
 
   </body>
 
