@@ -96,9 +96,9 @@ position absolute isset to cover the whole viewport
 .image { overflow: hidden;}
 .image img {width: 100%; height: 100%;}
 
-#todo {
+/*#todo {
   background: url('/assets/images/blue_cropped.png');
-}
+}*/
 /*
 The navigation container in the background
 */
