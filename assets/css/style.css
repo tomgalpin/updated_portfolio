@@ -19,6 +19,8 @@ header {
     z-index: 1;
     -webkit-box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
     box-shadow:  0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow:  -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
 }
 #hamburger {
     border: 1px solid #374C77;
@@ -65,10 +67,7 @@ The white stripes in the hamburger button
   border-radius: 75px;
   border: 6px solid #ffffff;
 }
-/*
-using background color is important to cover the menu
-position absolute isset to cover the whole viewport
-*/
+
 #content {
     background-color: #ffffff;
     position: relative;
