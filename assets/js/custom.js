@@ -1,6 +1,79 @@
 
 $(document).ready(function() {
 
+    // desktop slider
+    var thumbs = [
+        {
+            //blurb
+            background_image: '',
+            link_url: '#',
+            thumb_class: 'blurb'
+        },
+        {
+            //cars
+            background_image: 'assets/images/carscom-1.jpg',
+            link_url: '',
+            thumb_class: 'cars'
+        },
+        {
+            //universal
+            background_image: 'assets/images/universal-2.jpg',
+            link_url: '',
+            thumb_class: 'universal'
+        },
+        {
+            //chevyfc
+            background_image: 'assets/images/chevyfc-v2.jpg',
+            link_url: '',
+            thumb_class: 'chevyfc'
+        },
+        {
+            //cowboyvc
+            background_image: 'assets/images/cowboy-v1.jpg',
+            link_url: '',
+            thumb_class: 'cowboy'
+        },
+        {
+            //fisherprice
+            background_image: 'assets/images/fisher-price.jpg',
+            link_url: '',
+            thumb_class: 'fisherprice'
+        },
+        {
+            //hasbro
+            background_image: 'assets/images/hasbro-v1.jpg',
+            link_url: '',
+            thumb_class: 'hasbro'
+        },
+        {
+            //ninepoint88
+            background_image: 'assets/images/ninepoint88.jpg',
+            link_url: '',
+            thumb_class: 'ninepoint88'
+        }
+    ];
+
+    var right_arrow = $('#right_arrow');
+    var left_arrow = $('#left_arrow');
+    var shelf = $('#shelf');
+    var slider = $('#slider');
+
+    var num_thumbs_visible;
+    var partial_thumb_width;
+    var front_off_set;
+    var is_animating = false;
+
+    fill_slider = function(){
+        var slider_width = (thumbs.length * 315);
+        for (var i=0; i< thumbs.length; i++){
+            slider.append('<a target="_blank" href="' + thumbs[i].link_url + '"><div id="' + i + '" class="item_wrapper ' + thumbs[i].thumb_class + '"><img src="' + thumbs[i].background_image + '">/div></a><');
+        }
+        //set slider width based on amount of objects in array
+        slider.css('width', slider_width);
+    };
+    fill_slider();
+
+    // mobile hamburger menu
     $("#hamburger").click(function() {
 
         //set the width of primary content container -> content should not scale while animating
@@ -21,8 +94,7 @@ $(document).ready(function() {
         });
 
     });
-
-    //close the menu
+    //close the hamburger menu
     $("#contentLayer").click(function() {
 
         //enable all scrolling on mobile devices when menu is closed

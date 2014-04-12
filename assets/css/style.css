@@ -149,10 +149,12 @@ nav li a {
     z-index: 5;
     min-height: 1062px;
 }
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 0px) {
+    .desktop {display: none;}
+}
+@media only screen and (min-width: 560px) {
     #hamburger.mobile, .mobile { display: none;}
-
+    .desktop { display: block;}
     #image_container {
         left: 10%;
         margin-left: 0px;
@@ -170,10 +172,11 @@ nav li a {
         float: left;
         border: 1px solid red;
     }
+    #nav_links a:hover { background-color: #79bd9a;}
     .icon_containers { width: 85px;}
     .icon {
         display: block;
-        margin: 0 auto;
+        margin: 15px auto;
         border: 1px solid white;
         background: url('/assets/images/sprites.png') no-repeat;
         width: 50px;
@@ -186,5 +189,52 @@ nav li a {
     .icon_text {
         text-align: center;
         color: #ffffff;
+    }
+    #shelf {
+        border: 1px solid red;
+        position: absolute;
+        top: 220px;
+        left: 2%;
+        height: 250px;
+        overflow: hidden;
+        width: 96%;
+        margin-right: 10px;
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+    .arrow:hover {
+        opacity: 0.7;
+    }
+    .arrow img {
+        z-index: 500;
+    }
+    #left_arrow {
+        left: 0;
+    }
+    #right_arrow {
+        right: 0;
+    }
+    #slider {
+        background: green;
+        position: absolute;
+        width: auto;
+        height: 100%;
+           -moz-transition: left 0.9s;
+        -webkit-transition: left 0.9s;
+             -o-transition: left 0.9s;
+                transition: left 0.9s;
+    }
+    .item_wrapper {
+        display: block;
+        position: relative;
+        float: left;
+        margin: 0 15px 0px 0px;
+        width: 300px;
+        height: 250px;
+        background-color: yellow;
     }
 }
