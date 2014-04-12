@@ -172,11 +172,10 @@ nav li a {
     }
     .icon_containers { width: 85px;}
     .icon {
+        display: block;
         margin: 0 auto;
         border: 1px solid white;
-        background-image: url('assets/images/sprites.png');
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background: url('/assets/images/sprites.png') no-repeat;
         width: 50px;
         height: 50px;
     }
