@@ -57,6 +57,8 @@ $(document).ready(function() {
     var left_arrow = $('#left_arrow');
     var shelf = $('#shelf');
     var slider = $('#slider');
+    var slider_left = slider.css('left');
+    var counter = 0;
 
     var num_thumbs_visible;
     var partial_thumb_width;
@@ -66,12 +68,46 @@ $(document).ready(function() {
     fill_slider = function(){
         var slider_width = (thumbs.length * 315);
         for (var i=0; i< thumbs.length; i++){
-            slider.append('<a target="_blank" href="' + thumbs[i].link_url + '"><div id="' + i + '" class="item_wrapper ' + thumbs[i].thumb_class + '"><img src="' + thumbs[i].background_image + '">/div></a><');
+            slider.append('<a id="' + i + '" target="_blank" href="' + thumbs[i].link_url + '"><div class="item_wrapper ' + thumbs[i].thumb_class + '"><img src="' + thumbs[i].background_image + '"></div></a>');
         }
         //set slider width based on amount of objects in array
         slider.css('width', slider_width);
+        left_arrow.hide();
     };
     fill_slider();
+
+    right_click = function(){
+        var integer_right = (parseInt(slider_left, 10) - 315);
+        slider.css('left', integer_right + 'px');
+        // set a time out for animation to finish
+        setTimeout(function() {
+            // after animation is done, read and set new slider_left
+            slider_left = integer_right + 'px';
+        }, 500);
+        counter ++;
+        // if not on first position, show the left arrow;
+        if (counter > 0) { left_arrow.show();}
+        console.log(counter);
+    };
+
+    left_click = function(){
+        var integer_left = (parseInt(slider_left, 10) + 315);
+        slider.css('left', integer_left + 'px');
+        setTimeout(function() {
+            // after animation is done, read and set new slider_left
+            slider_left = integer_left + 'px';
+        }, 500);
+        counter --;
+        // if on first position, disable left arrow
+        if (counter <= 0) { left_arrow.hide(); }
+        console.log(counter);
+    };
+    right_arrow.on('click', right_click);
+    left_arrow.on('click', left_click);
+
+    if (counter > 0) {
+        left_arrow.show();
+    }
 
     // mobile hamburger menu
     $("#hamburger").click(function() {

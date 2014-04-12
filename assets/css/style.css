@@ -221,6 +221,7 @@ nav li a {
     #slider {
         background: green;
         position: absolute;
+        left: 0px;
         width: auto;
         height: 100%;
            -moz-transition: left 0.9s;
