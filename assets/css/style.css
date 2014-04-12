@@ -43,9 +43,6 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4569b2', endColorstr='#4062a5',GradientType=0 );
 }
 
-/*
-The white stripes in the hamburger button
-*/
 #hamburger div {
     background-color: #fff;
     border: 1px solid #eee;
@@ -54,6 +51,7 @@ The white stripes in the hamburger button
     margin-top: 3px;
     width: 90%;
 }
+
 #image_container {
   position: absolute;
   top: 50%;
@@ -95,12 +93,7 @@ The white stripes in the hamburger button
 .image { overflow: hidden;}
 .image img {width: 100%; height: 100%;}
 
-/*#todo {
-  background: url('/assets/images/blue_cropped.png');
-}*/
-/*
-The navigation container in the background
-*/
+/* mobile nav*/
 nav {
     left: 0px;
     top: 0px;
@@ -123,9 +116,7 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3c3d', endColorstr='#2d2c2d',GradientType=0 );
 }
 
-/*
-Style the navigation menu
-*/
+/* mobile nav menu */
 nav ul {
     list-style: none;
     margin: 0;
@@ -146,10 +137,6 @@ nav li a {
     text-decoration: none;
 }
 
-/*
-The Layer that will be layed over the content
-so that the content is unclickable while menu is shown
-*/
 #contentLayer {
     display: none;
     height: 100%;
@@ -161,4 +148,44 @@ so that the content is unclickable while menu is shown
     width: 30%;
     z-index: 5;
     min-height: 1062px;
+}
+
+@media only screen and (min-width: 500px) {
+    #hamburger.mobile, .mobile { display: none;}
+
+    #image_container {
+        left: 10%;
+        margin-left: 0px;
+    }
+    .desktop { display: block;}
+    #nav_links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -56.5px;
+    }
+    #nav_links a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        border: 1px solid red;
+    }
+    .icon_containers { width: 85px;}
+    .icon {
+        margin: 0 auto;
+        border: 1px solid white;
+        background-image: url('assets/images/sprites.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 50px;
+        height: 50px;
+    }
+    #resume .icon { background-position: 0 0;}
+    #github .icon { background-position: -50px -1px;}
+    #linkedin .icon { background-position: -101px 0;}
+    #email .icon { background-position: -151px -1px;}
+    .icon_text {
+        text-align: center;
+        color: #ffffff;
+    }
 }

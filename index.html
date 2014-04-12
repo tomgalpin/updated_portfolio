@@ -13,10 +13,8 @@
 
     <div id="container">
 
-
-      <div id="navbar">
         <header>
-            <div id="hamburger">
+            <div id="hamburger" class="mobile">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -27,10 +25,58 @@
                 <img src="assets/images/profile_pic2.png">
               </div>
             </div> <!-- #image_container -->
+
+            <div id="nav_links" class="desktop">
+
+              <a  href="assets/images/Tom_Galpin_Resume.pdf" >
+                <div id="resume" class="icon_containers">
+                  <div class="icon">
+                    <!-- <img src="assets/images/resume_icon.png"> -->
+                  </div>
+                  <div class="icon_text">
+                    <p>Resume</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="http://github.com/tomgalpin" target="_blank">
+                <div id="github" class="icon_containers">
+                  <div class="icon">
+                    <!-- <img src="assets/images/github-48.png"> -->
+                  </div>
+                  <div class="icon_text">
+                    <p>Github</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="http://www.linkedin.com/pub/tom-galpin/7/66a/10b" target="_blank">
+                <div id="linkedin" class="icon_containers">
+                  <div class="icon">
+                    <!-- <img src="assets/images/linkedin-48.png"> -->
+                  </div>
+                  <div class="icon_text">
+                    <p>LinkedIn</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="mailto:tomgalpin@gmail.com" target="_blank">
+                <div id="email" class="icon_containers">
+                  <div class="icon">
+                    <!-- <img src="assets/images/email-48.png"> -->
+                  </div>
+                  <div class="icon_text">
+                    <p>Email</p>
+                  </div>
+                </div>
+              </a>
+
+            </div> <!-- #nav_links -->
         </header>
 
-        <!--The mobile navigation Markup hidden via css-->
-        <nav class="mobile_navigation">
+        <!--mobile nav-->
+        <nav class="mobile_navigation mobile" >
             <ul>
                 <li><a href="assets/images/Tom_Galpin_Resume.pdf" target="_blank">Resume</a></li>
                 <li><a href="http://github.com/tomgalpin" target="_blank">Github</a></li>
@@ -38,11 +84,10 @@
                 <li><a href="mailto:tomgalpin@gmail.com" target="_blank">Email</a></li>
             </ul>
         </nav>
-      </div>  <!-- navbar -->
 
-      <div id="contentLayer"></div>
+      <div id="contentLayer" class="mobile"></div>
 
-      <div id="content">
+      <div id="content" class="mobile">
         <div id="blurb" class="projects"></div>
         <div id="cowboy" class="projects">
         </div>

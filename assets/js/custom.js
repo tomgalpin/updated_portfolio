@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
 
-    //Open the menu
     $("#hamburger").click(function() {
 
         //set the width of primary content container -> content should not scale while animating
